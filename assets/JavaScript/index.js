@@ -69,9 +69,8 @@ $(document).ready(function() {
 	 var h1 = $('.H1');
      var tl = new TimelineLite();
 
-     tl
-     .from(h1, 0.5, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=0.5')
-     .to(h1, 0.5, {y: -15, autoAlpha: 1, ease:Power1.easeOut});
+     tl.fromTo(h1, 0.5, {y: -50, autoAlpha: 0, ease:Power1.easeOut}, 
+        {y: 0, autoAlpha: 1, ease:Power1.easeOut}, '+=0.5');
 
      ScrollTrigger.create({
       start: 'top -80',
