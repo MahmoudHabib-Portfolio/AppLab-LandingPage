@@ -65,25 +65,13 @@ $(document).ready(function() {
         gsap.to(window, {duration: 1, scrollTo:{y:".faqhawk", offsetY:75}});
     });
 
-    gsap.registerPlugin(ScrollTrigger);
-
-     gsap.to(".homehawk", {
-        scrollTrigger: {
-            trigger: ".homehawk",
-            start: "top center",
-            toggleActions: 'play none none reverse'
-        },
-        opacity: 1,
-        duration: 0.5,
-        ease: "power4.inOut"
-     });
-
      /*====== Animate Heading ======*/
 	 var h1 = $('.H1');
      var tl = new TimelineLite();
 
      tl
-     .from(h1, 0.5, {y: -60, autoAlpha: 0, ease:Power1.easeOut}, '+=1');
+     .from(h1, 0.5, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=0.1')
+     .to(h1, 0.5, {y: -15, autoAlpha: 1, ease:Power1.easeOut});
 
      ScrollTrigger.create({
       start: 'top -80',
@@ -94,4 +82,3 @@ $(document).ready(function() {
 
 
 });
-
