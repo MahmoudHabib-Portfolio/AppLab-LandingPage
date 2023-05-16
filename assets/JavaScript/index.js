@@ -70,7 +70,7 @@ $(document).ready(function() {
      var tl = new TimelineLite();
 
      tl
-     .from(h1, 0.5, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=0.1')
+     .from(h1, 0.5, {y: 0, autoAlpha: 0, ease:Power1.easeOut}, '+=0.5')
      .to(h1, 0.5, {y: -15, autoAlpha: 1, ease:Power1.easeOut});
 
      ScrollTrigger.create({
